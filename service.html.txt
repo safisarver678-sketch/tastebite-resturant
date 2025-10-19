@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TasteBite - Our Services</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #fffaf0;
+    }
+
+    header {
+      background-color: #c0392b; /* Red header */
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      background-color: #c0392b;
+    }
+
+    .services-section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .services-section h2 {
+      color: #c0392b;
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+    }
+
+    .service-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      justify-items: center;
+      padding: 0 20px;
+    }
+
+    .service-box {
+      background: white;
+      border-radius: 15px;
+      padding: 30px 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s ease;
+    }
+
+    .service-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+    }
+
+    .service-box img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+
+    .service-box h3 {
+      color: #c0392b;
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+    }
+
+    .service-box p {
+      color: #333;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <header>🍽️ TasteBite Restaurant</header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="order.html">Order</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="services.html">Services</a>
+    <a href="chefs.html">Chefs</a>
+    <a href="reviews.html">Reviews</a>
+  </nav>
+
+  <section class="services-section">
+    <h2>Our Services</h2>
+
+    <div class="service-container">
+
+      <div class="service-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/3595/3595455.png" alt="Dine In">
+        <h3>Dine-In</h3>
+        <p>Enjoy a warm and cozy dining experience in our beautifully designed restaurant with friendly staff and quick service.</p>
+      </div>
+
+      <div class="service-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/3515/3515798.png" alt="Takeaway">
+        <h3>Takeaway</h3>
+        <p>Grab your favorite meals on the go! Quick preparation and packaging to ensure freshness and taste every time.</p>
+      </div>
+
+      <div class="service-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Delivery">
+        <h3>Home Delivery</h3>
+        <p>We deliver your delicious meals right to your doorstep, hot and fresh, through our fast and reliable delivery service.</p>
+      </div>
+
+      <div class="service-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/3556/3556913.png" alt="Catering">
+        <h3>Event Catering</h3>
+        <p>Planning a party or event? We offer full catering services with customized menus to suit every occasion.</p>
+      </div>
+
+      <div class="service-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/430/430561.png" alt="Private Dining">
+        <h3>Private Dining</h3>
+        <p>Enjoy an exclusive private dining experience with customized decor and dedicated service for special moments.</p>
+      </div>
+
+      <div class="service-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/3557/3557134.png" alt="Online Booking">
+        <h3>Online Reservation</h3>
+        <p>Reserve your table online anytime! Simple and fast booking with instant confirmation through our website.</p>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>

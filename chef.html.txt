@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TasteBite - Our Chefs</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #fffaf0;
+    }
+
+    header {
+      background-color: #c0392b; /* Red header */
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      background-color: #c0392b;
+    }
+
+    .chef-section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .chef-section h2 {
+      color: #c0392b;
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+    }
+
+    .chefs-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      justify-items: center;
+    }
+
+    .chef-card {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 300px;
+      padding: 20px;
+      text-align: center;
+      transition: 0.3s ease;
+    }
+
+    .chef-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .chef-card img {
+      width: 100%;
+      height: 250px;
+      border-radius: 15px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .chef-card h3 {
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    .chef-role {
+      color: #c0392b;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .chef-desc {
+      color: #555;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <header>🍽️ TasteBite Restaurant</header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="order.html">Order</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="services.html">Services</a>
+    <a href="chefs.html">Chefs</a>
+    <a href="reviews.html">Reviews</a>
+  </nav>
+
+  <section class="chef-section">
+    <h2>Meet Our Master Chefs</h2>
+
+    <div class="chefs-container">
+
+      <div class="chef-card">
+        <img src="rc-cf-FMh5o5m5N9E-unsplash.jpg" alt="Chef John">
+        <h3>Chef John Miller</h3>
+        <p class="chef-role">Head Chef</p>
+        <p class="chef-desc">
+          With 15 years of culinary experience, Chef John leads the kitchen with creativity and passion for authentic flavors.
+        </p>
+      </div>
+
+      <div class="chef-card">
+        <img src="martin-baron-0sbq9Rxcx-c-unsplash.jpg" alt="Chef Maria">
+        <h3>Chef Maria Lopez</h3>
+        <p class="chef-role">Pastry Specialist</p>
+        <p class="chef-desc">
+          Maria’s desserts are a blend of art and flavor — from chocolate donuts to signature cheesecakes.
+        </p>
+      </div>
+
+      <div class="chef-card">
+        <img src="louis-hansel-v3OlBE6-fhU-unsplash.jpg" alt="Chef David">
+        <h3>Chef David Khan</h3>
+        <p class="chef-role">Grill Master</p>
+        <p class="chef-desc">
+          Famous for his smoky beef burgers and grilled steaks, Chef David brings barbecue perfection to every bite.
+        </p>
+      </div>
+
+      <div class="chef-card">
+        <img src="jeff-siepman-z-IxdGQ7lPU-unsplash.jpg" alt="Chef Aisha">
+        <h3>Chef Aisha Rahman</h3>
+        <p class="chef-role">Sushi & Asian Cuisine Expert</p>
+        <p class="chef-desc">
+          Aisha specializes in delicate sushi platters and Asian fusion dishes that combine taste and presentation beautifully.
+        </p>
+      </div>
+
+    </div>
+  </section>
+</body>
+</html>

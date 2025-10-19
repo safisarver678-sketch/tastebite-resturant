@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TasteBite - Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #fffaf0;
+    }
+
+    header {
+      background-color: #c0392b; /* Red header */
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      background-color: #c0392b;
+    }
+
+    .gallery-section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .gallery-section h2 {
+      color: #c0392b;
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+    }
+
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: 0.4s ease;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: 0.3s ease;
+    }
+
+    .gallery-item:hover img {
+      opacity: 0.85;
+    }
+
+    .caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(192, 57, 43, 0.8);
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 1rem;
+      opacity: 0;
+      transition: 0.3s;
+    }
+
+    .gallery-item:hover .caption {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <header>🍽️ TasteBite Restaurant</header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="order.html">Order</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="services.html">Services</a>
+    <a href="chefs.html">Chefs</a>
+    <a href="reviews.html">Reviews</a>
+  </nav>
+
+  <section class="gallery-section">
+    <h2>Inside TasteBite Restaurant</h2>
+
+    <div class="gallery-container">
+      
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=800&q=80" alt="Restaurant Entrance">
+        <div class="caption">TasteBite Entrance</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="restaurant-hall-with-red-brick-walls-wooden-tables-pipes-ceiling.jpg" alt="Dining Area">
+        <div class="caption">Cozy Dining Area</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="datingscout-9S_9IVeEzrU-unsplash.jpg" alt="Outdoor Seating">
+        <div class="caption">Outdoor Seating</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="low-angle-wicker-lamps-ceiling-inside-building.jpg" alt="Restaurant Lighting">
+        <div class="caption">Warm Lighting Ambience</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Coffee Bar">
+        <div class="caption">Coffee & Dessert Corner</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=800&q=80" alt="Modern Interior">
+        <div class="caption">Modern Interior Design</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="glenov-brankovic-e4B5AvA7Jqo-unsplash.jpg" alt="Restaurant Hall">
+        <div class="caption">Main Hall View</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="bartender-making-delicious-refreshing-cocktail.jpg" alt="Bar Section">
+        <div class="caption">Bar & Beverage Section</div>
+       </div>
+
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - TasteBite Restaurant</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #fffaf0;
+    }
+
+    header {
+      background-color: #c0392b; /* Red header */
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      background-color: #c0392b;
+    }
+
+    .about-section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .about-section h2 {
+      color: #c0392b;
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    .about-section p {
+      max-width: 800px;
+      margin: 0 auto;
+      color: #333;
+      line-height: 1.8;
+      font-size: 1rem;
+    }
+
+    .about-images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      justify-items: center;
+      margin-top: 40px;
+      padding: 0 20px;
+    }
+
+    .about-images img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s ease;
+    }
+
+    .about-images img:hover {
+      transform: scale(1.05);
+    }
+
+    .mission {
+      background-color: #fef2f2;
+      padding: 50px 20px;
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    .mission h3 {
+      color: #c0392b;
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+
+    .mission p {
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.8;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <header>🍽️ TasteBite Restaurant</header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="order.html">Order</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="services.html">Services</a>
+    <a href="chefs.html">Chefs</a>
+    <a href="reviews.html">Reviews</a>
+  </nav>
+
+  <section class="about-section">
+    <h2>Welcome to TasteBite Restaurant</h2>
+    <p>
+      At <strong>TasteBite</strong>, food is more than a meal — it’s an experience.  
+      Founded in 2015, we began with a simple mission: to bring people together through delicious food and warm hospitality.  
+      Our chefs combine fresh ingredients, creativity, and love to craft dishes that celebrate flavor and tradition.
+    </p>
+
+    <p>
+      Whether you’re joining us for a casual lunch, a romantic dinner, or a family gathering,  
+      we promise an experience filled with mouthwatering taste, relaxing ambiance, and heartfelt service.  
+      At TasteBite, every bite tells a story.
+    </p>
+
+    <div class="about-images">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Restaurant Interior">
+      <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80" alt="Modern Dining Area">
+      <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=800&q=80" alt="Chef Preparing Food">
+    </div>
+  </section>
+
+  <section class="mission">
+    <h3>Our Mission</h3>
+    <p>
+      To serve happiness through our food, our passion, and our care.  
+      We aim to provide not only a great meal but a memorable dining experience.  
+      Every plate is crafted with dedication, every ingredient chosen with love,  
+      and every guest welcomed like family.
+    </p>
+  </section>
+
+</body>
+</html>

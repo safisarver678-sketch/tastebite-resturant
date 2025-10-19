@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TasteBite - Reviews</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #fffaf0;
+    }
+
+    header {
+      background-color: #c0392b;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      background-color: #c0392b;
+    }
+
+    .review-section {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .review-section h2 {
+      color: #c0392b;
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .reviews-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      justify-items: center;
+    }
+
+    .review-card {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      max-width: 350px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: 0.3s ease;
+      text-align: center;
+    }
+
+    .review-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .review-card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .review-card h3 {
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    .stars {
+      color: #f1c40f;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .review-text {
+      color: #555;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <header>🍽️ TasteBite Restaurant</header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="order.html">Order</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="services.html">Services</a>
+    <a href="chefs.html">Chefs</a>
+    <a href="reviews.html">Reviews</a>
+  </nav>
+
+  <div class="review-section">
+    <h2>What Our Customers Say</h2>
+
+    <div class="reviews-container">
+      <div class="review-card">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer 1">
+        <h3>Sarah Johnson</h3>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p class="review-text">
+          “The food was absolutely delicious! The cheese pizza was so fresh, and the staff were very friendly. Highly recommend TasteBite!”
+        </p>
+      </div>
+
+      <div class="review-card">
+        <img src="https://randomuser.me/api/portraits/men/36.jpg" alt="Customer 2">
+        <h3>David Brown</h3>
+        <div class="stars">⭐⭐⭐⭐</div>
+        <p class="review-text">
+          “Really enjoyed the beef burger and cappuccino combo. Cozy environment and fast service. Will come again!”
+        </p>
+      </div>
+
+      <div class="review-card">
+        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Customer 3">
+        <h3>Emily Carter</h3>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p class="review-text">
+          “Their desserts are a must-try! The chocolate donuts were heavenly. One of the best restaurants in town.”
+        </p>
+      </div>
+
+      <div class="review-card">
+        <img src="https://randomuser.me/api/portraits/men/23.jpg" alt="Customer 4">
+        <h3>Michael Adams</h3>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p class="review-text">
+          “Excellent quality and amazing variety on the menu. The sushi platter and pasta were spot on. Worth every penny.”
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

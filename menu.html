@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TasteBite Menu</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #fffaf0;
+    }
+
+    /* 🔴 Header color changed to red */
+    header {
+      background-color: #c0392b; /* Red color */
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      background-color: #c0392b;
+    }
+
+    .menu-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .menu-item {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: 0.3s ease;
+    }
+
+    .menu-item:hover {
+      transform: scale(1.05);
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .menu-info {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .menu-info h3 {
+      margin: 10px 0;
+      color: #c0392b;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #27ae60;
+    }
+  </style>
+</head>
+<body>
+  <header>🍽️ TasteBite Restaurant</header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="order.html">Order</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="services.html">Services</a>
+    <a href="chefs.html">Chefs</a>
+    <a href="reviews.html">Reviews</a>
+  </nav>
+
+  <div class="menu-container">
+    <div class="menu-item">
+      <img src="chad-montano-MqT0asuoIcU-unsplash.jpg" alt="Pizza">
+      <div class="menu-info">
+        <h3>Cheese Pizza</h3>
+        <p class="price">$10.99</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+  <img src="amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg" alt="Burger">
+  <div class="menu-info">
+    <h3>Classic Beef Burger</h3>
+    <p class="price">$8.99</p>
+  </div>
+</div>
+
+
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80" alt="Pasta">
+      <div class="menu-info">
+        <h3>Italian Pasta</h3>
+        <p class="price">$9.49</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="anna-pelzer-IGfIGP5ONV0-unsplash.jpg" alt="Salad">
+      <div class="menu-info">
+        <h3>Fresh Salad</h3>
+        <p class="price">$6.50</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="jakub-dziubak-iOHJKJqO6E0-unsplash.jpg" alt="Sushi">
+      <div class="menu-info">
+        <h3>Sushi Platter</h3>
+        <p class="price">$14.99</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="ian-dooley-TLD6iCOlyb0-unsplash.jpg" alt="Ice Cream">
+      <div class="menu-info">
+        <h3>Ice Cream Sundae</h3>
+        <p class="price">$5.49</p>
+      </div>
+    </div>
+
+  <div class="menu-item">
+  <img src="lore-schodts-8BNGxSAQd6M-unsplash.jpg" alt="Chocolate Donuts">
+  <div class="menu-info">
+    <h3>Chocolate Donuts</h3>
+    <p class="price">$4.99</p>
+  </div>
+</div>
+
+
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Coffee">
+      <div class="menu-info">
+        <h3>Steak</h3>
+        <p class="price">$3.99</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="abhishek-hajare-kkrXVKK-jhg-unsplash.jpg" alt="Juice">
+      <div class="menu-info">
+        <h3>Fresh Juice</h3>
+        <p class="price">$3.50</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
