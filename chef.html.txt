@@ -148,7 +148,7 @@
       </div>
 
       <div class="chef-card">
-        <img src="jeff-siepman-z-IxdGQ7lPU-unsplash.jpg" alt="Chef Aisha">
+        <img src="https://github.com/safisarver678-sketch/tastebite-resturant/blob/main/image3.jpf/jeff-siepman-z-IxdGQ7lPU-unsplash.jpg" alt="Chef Aisha">
         <h3>Chef Aisha Rahman</h3>
         <p class="chef-role">Sushi & Asian Cuisine Expert</p>
         <p class="chef-desc">
@@ -160,3 +160,4 @@
   </section>
 </body>
 </html>
+
